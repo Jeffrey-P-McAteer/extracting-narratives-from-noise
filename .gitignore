@@ -1,0 +1,12 @@
+out
+bin
+build
+target
+data
+pyenv
+.pyenv
+py-env
+.py-env
+
+
+
