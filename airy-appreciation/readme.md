@@ -6,6 +6,8 @@ In this folder we use public data sets to answer these two questions
  - What is the correlation between dollars invested in an airline and the airline's average flight delay in minutes?
  - How much time passes between time-of-investment and observed effects on the airline's average flight delay?
 
+# Getting Some Data
+
 The first piece of data we must find is a source of flight delay data split up by airline.
 
 Searching the web reveals a few ideas:
@@ -14,9 +16,7 @@ Searching the web reveals a few ideas:
  - https://www.faa.gov/data_research/aviation_data_statistics
  - https://www.transtats.bts.gov/
 
-We'll download a copy of each dataset and identify strengths + weaknesses related to the questions we want to answer.
-
-**TODO ^^**
+We'll download a copy of each dataset and identify strengths + weaknesses related to the questions we want to answer after we finish identifying data to aquire & use (**TODO-1**)
 
 The second piece of data we must find is a source of investments made by various airlines; this means we will have to trim
 the data sets to only consider airlines and time-spans for which we have _both_ pieces of information to perform the analysis with.
@@ -24,9 +24,12 @@ the data sets to only consider airlines and time-spans for which we have _both_ 
 A complexity we will ignore here is the need to find a good working model of how dollars turn into delays; it is entirely possible for a `$1BN` bond
 to be used marketing the airline and not materially affect performance of the fleet.
 
+I'll look at the various data sources available; this is a manual step which we are going to write code to automate later. For now let's download the 2004-2024 data from `faa.gov` on "Airline On-Time Statistics & Delay Causes".
 
+![imgs/airline-on-time-statistics-and-delays.png](imgs/airline-on-time-statistics-and-delays.png)
 
+The data is provided as a `.zip` file containing 2 `.csv` files, one with data and one with column definitions.
 
-**TODO ^^**
+![imgs/data-snapshot.png](imgs/data-snapshot.png)
 
 
